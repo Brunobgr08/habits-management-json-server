@@ -6,6 +6,112 @@
       "name": "Kenzinho",
       "age": 38,
       "id": 1
+    },
+    {
+      "email": "bruno@teste.com",
+      "password": "$2a$10$N1ykUKN/qvniGLyqoCf4ge7IM9yo9K82bTAN5.h7HpFbhkkvOtUe.",
+      "name": "Bruno",
+      "age": 33,
+      "id": 2
+    },
+    {
+      "email": "miguel@teste.com",
+      "password": "$2a$10$8U3PesnU7KxKiTYjQCf/N.3f/Xaz23PBpj/KYCw3Ueoy3mRNXu4g2",
+      "name": "Miguel",
+      "age": 5,
+      "id": 3
+    },
+    {
+      "email": "marcos@teste.com",
+      "password": "$2a$10$buA0YSJTKjNZ9gsQuA5wXOVvhkycrlA9u0o7Ql4OgeTWrLTlHcBpe",
+      "name": "Marcos",
+      "age": 18,
+      "id": 4
+    },
+    {
+      "email": "silva@teste.com",
+      "password": "$2a$10$vOGBIEsZMLgGphfPW7FycuaWF0yi0L1lyWM5C9htT6xrv/X7vJdWi",
+      "name": "Silva",
+      "age": 18,
+      "id": 5
+    }
+  ],
+  "habits": [
+    {
+      "title": "Calistenia a tarde (15 minutos)",
+      "category": "Sáude",
+      "difficulty": "Muito díficil",
+      "frequency": "Diária",
+      "achieved": false,
+      "how_much_achieved": 30,
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "title": "Futebol às terças-feiras",
+      "category": "Sáude",
+      "difficulty": "Muito fácil",
+      "frequency": "Semanal",
+      "achieved": false,
+      "how_much_achieved": 30,
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "title": "Futebol às terças-feiras",
+      "category": "Sáude",
+      "difficulty": "Muito fácil",
+      "frequency": "Semanal",
+      "achieved": false,
+      "how_much_achieved": 30,
+      "userId": 2,
+      "id": 3
+    }
+  ],
+  "groups": [
+    {
+      "name": "Grupo de leitura",
+      "description": "Somos um grupo de leitura focado em auto ajuda.",
+      "category": "Leitura",
+      "users_on_group": [2],
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "name": "Grupo de calistenia",
+      "description": "Somos um grupo focado calistenia.",
+      "category": "Saúde",
+      "users_on_group": [1, 2],
+      "userId": 2,
+      "id": 2
+    }
+  ],
+  "goals": [
+    {
+      "title": "Nenhuma falta na academia cometida pelos membros do grupo na semana",
+      "difficulty": "Díficil",
+      "how_much_achieved": 100,
+      "achieved": false,
+      "groupsId": 1,
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "title": "Nenhuma falta nas atividades cometida pelos membros do grupo na semana",
+      "difficulty": "Easy",
+      "how_much_achieved": 100,
+      "achieved": false,
+      "groupId": 1,
+      "userId": 2,
+      "id": 2
+    }
+  ],
+  "activities": [
+    {
+      "title": "Treino funcional na praia",
+      "realization_time": "2021-03-10T15:00:00Z",
+      "groupId": 2,
+      "id": 1
     }
   ]
 }
