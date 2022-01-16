@@ -40,7 +40,7 @@
     {
       "title": "Calistenia a tarde (15 minutos)",
       "category": "Sáude",
-      "difficulty": "Muito díficil",
+      "difficulty": "Díficil",
       "frequency": "Diária",
       "achieved": false,
       "how_much_achieved": 30,
@@ -58,9 +58,9 @@
       "id": 2
     },
     {
-      "title": "Futebol às terças-feiras",
-      "category": "Sáude",
-      "difficulty": "Muito fácil",
+      "title": "Estudar às terças-feiras",
+      "category": "Mental",
+      "difficulty": "fácil",
       "frequency": "Semanal",
       "achieved": false,
       "how_much_achieved": 30,
@@ -73,15 +73,20 @@
       "name": "Grupo de leitura",
       "description": "Somos um grupo de leitura focado em auto ajuda.",
       "category": "Leitura",
-      "users_on_group": [2],
+      "users_on_group": [
+        2
+      ],
       "userId": 2,
       "id": 1
     },
     {
       "name": "Grupo de calistenia",
-      "description": "Somos um grupo focado calistenia.",
+      "description": "Somos um grupo altamente focado calistenia.",
       "category": "Saúde",
-      "users_on_group": [1, 2],
+      "users_on_group": [
+        1,
+        2
+      ],
       "userId": 2,
       "id": 2
     }
@@ -97,19 +102,28 @@
       "id": 1
     },
     {
-      "title": "Nenhuma falta nas atividades cometida pelos membros do grupo na semana",
+      "title": "200 abdominais",
       "difficulty": "Easy",
       "how_much_achieved": 100,
       "achieved": false,
       "groupId": 1,
       "userId": 2,
       "id": 2
+    },
+    {
+      "title": "5km de corrida pela manhã",
+      "difficulty": "Easy",
+      "how_much_achieved": 100,
+      "achieved": false,
+      "groupId": 1,
+      "userId": 2,
+      "id": 3
     }
   ],
   "activities": [
     {
       "title": "Treino funcional na praia",
-      "realization_time": "2021-03-10T15:00:00Z",
+      "realization_time": "2022-03-12T15:00:00Z",
       "groupId": 2,
       "id": 1
     }

@@ -235,6 +235,34 @@ Rotas que necessitam de autorização deve ser informado no cabeçalho da requis
   }
 ```
 
+<h3 align ='center'> Atualizar hábito</h3>
+
+`PATCH /habits/:id - FORMATO DA REQUISIÇÃO - STATUS 200`
+
+1. A url da requisição deve receber o id do hábito que deseja atualizar;
+2. O corpo da requisição deve receber somente os dados a serem atualizados.
+
+```json
+{
+  "title": "Check-up",
+  "category": "Saúde",
+  "difficulty": "Fácil",
+  "frequency": "Anual",
+  "achieved": true
+}
+```
+
+<h3 align ='center'> Deletar/Excluir hábito</h3>
+
+`DELETE /habits/:id - FORMATO DA REQUISIÇÃO - STATUS 200`
+
+1. A url da requisição deve receber o id do hábito que deseja excluir;
+2. Não é necessário nenhuma informação no corpo da requisição.
+
+```json
+{}
+```
+
 <h2 align ='center'>Grupos</h2>
 
 <h3 align ='center'> Listar Grupos </h3>
@@ -278,6 +306,33 @@ Rotas que necessitam de autorização deve ser informado no cabeçalho da requis
 
 1. O campo - "users_on_group" deve receber os ids do users que participam do grupo.
 2. O campo - "userId" deve receber respectivamente o id do user que criou o grupo.
+
+<h3 align ='center'> Atualizar grupo</h3>
+
+`PATCH /groups/:id - FORMATO DA REQUISIÇÃO - STATUS 200`
+
+1. A url da requisição deve receber o id do grupo que deseja atualizar;
+2. O corpo da requisição deve receber somente os dados a serem atualizados.
+
+```json
+{
+  "name": "Grupo de malhação",
+  "description": "Somos um grupo focado academia e fitness.",
+  "category": "Saúde",
+  "users_on_group": [1, 2]
+}
+```
+
+<h3 align ='center'> Deletar/Excluir grupo</h3>
+
+`DELETE /groups/:id - FORMATO DA REQUISIÇÃO - STATUS 200`
+
+1. A url da requisição deve receber o id do grupo que deseja excluir;
+2. Não é necessário nenhuma informação no corpo da requisição.
+
+```json
+{}
+```
 
 <h2 align ='center'>Metas</h2>
 
@@ -326,6 +381,32 @@ Rotas que necessitam de autorização deve ser informado no cabeçalho da requis
 1. O campo - "userId" deve receber o id do user que criou a meta.
 2. O campo - "groupId" deve receber o id do grupo ao qual a meta está relacionada.
 
+<h3 align ='center'> Atualizar meta</h3>
+
+`PATCH /goals/:id - FORMATO DA REQUISIÇÃO - STATUS 200`
+
+1. A url da requisição deve receber o id da meta que deseja atualizar;
+2. O corpo da requisição deve receber somente os dados a serem atualizados.
+
+```json
+{
+  "difficulty": "Hard",
+  "how_much_achieved": 30,
+  "achieved": true
+}
+```
+
+<h3 align ='center'> Deletar/Excluir meta</h3>
+
+`DELETE /goals/:id - FORMATO DA REQUISIÇÃO - STATUS 200`
+
+1. A url da requisição deve receber o id da meta que deseja excluir;
+2. Não é necessário nenhuma informação no corpo da requisição.
+
+```json
+{}
+```
+
 <h2 align ='center'>Atividades</h2>
 
 <h3 align ='center'> Listar atividades </h3>
@@ -356,6 +437,31 @@ Rotas que necessitam de autorização deve ser informado no cabeçalho da requis
 ```
 
 1. O campo - "groupId" deve receber o id do grupo ao qual a atividades está relacionada.
+
+<h3 align ='center'> Atualizar atividade</h3>
+
+`PATCH /activities/:id - FORMATO DA REQUISIÇÃO - STATUS 200`
+
+1. A url da requisição deve receber o id da atividade que deseja atualizar;
+2. O corpo da requisição deve receber somente os dados a serem atualizados.
+
+```json
+{
+  "title": "Treino funcional na academia",
+  "realization_time": "2022-02-10T15:00:00Z"
+}
+```
+
+<h3 align ='center'> Deletar/Excluir atividade</h3>
+
+`DELETE /activities/:id - FORMATO DA REQUISIÇÃO - STATUS 200`
+
+1. A url da requisição deve receber o id da atividade que deseja excluir;
+2. Não é necessário nenhuma informação no corpo da requisição.
+
+```json
+{}
+```
 
 ---
 
